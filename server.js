@@ -65,8 +65,8 @@ Only talk about space 🪐.
   }
 });
 
-// ✅ Catch-all route (VERY IMPORTANT)
-app.get("*", (req, res) => {
+// ✅ FIXED Catch-all route
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
